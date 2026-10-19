@@ -1,0 +1,12 @@
+version: "1.0"
+dataset: "raw-scrapes"
+columns:
+  scraper_name: "String"
+  url: "String"
+  status_code: "Int64"
+  response_time_ms: "Float64"
+  raw_content: "String"
+  timestamp: "Float64"
+rules:
+  max_null_Percentage: 0.05
+  allowed_status_codes: [200, 201, 202, 203, 204, 301, 302, 404, 500]
