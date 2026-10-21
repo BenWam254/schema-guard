@@ -1,5 +1,10 @@
 # schema-guard
 
+[![CI Pipeline](https://github.com/BenWam254/schema-guard/actions/workflows/ci.yml/badge.svg)](https://github.com/BenWam254/schema-guard/actions)
+[![Python Version](https://img.shields.io/badge/python-3.13-blue.svg)](https://www.python.org/downloads/)
+[![Package Manager](https://img.shields.io/badge/managed%20by-uv-purple.svg)](https://github.com/astral-sh/uv)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 An automated data contract enforcement engine and schema drift detection CLI built to validate streaming data models, detect structural breaking changes, and enforce type safety before downstream storage.
 
 Built with **Polars** for zero-copy lazy frame schema evaluation, **Pydantic** for declarative contract defintions, and **Typer** for terminal-first developer ergonomics, `schema-guard` validates incoming parquet or JSON data payloads against defined contracts and outputs interactive executice reports.
